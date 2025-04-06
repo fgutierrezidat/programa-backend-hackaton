@@ -1,0 +1,8 @@
+Algoritmo calcular_edad_persona
+	escribir "Ingrense el anio de nacimiento: "
+	leer anio_nacimiento 
+	escribir "Ingrese el anio actual:"
+	leer anio_actual
+	edad <- (anio_actual - anio_nacimiento)
+	escribir edad 
+FinAlgoritmo

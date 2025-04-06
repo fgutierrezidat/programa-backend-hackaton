@@ -1,0 +1,31 @@
+Algoritmo validar_credecial
+	definir usuario, contra Como Caracter
+	Escribir "Ingresa tu usuario : "
+	leer usuario
+	Escribir "Ingresa la contrasena: "
+	Leer  contra
+	
+	si longitud(usuario) < 6 entonces 
+		escribir "El usuario debe tener al menos 6 caracteres"
+	FinSi
+	
+	si longitud(contra) < 8 entonces
+		escribir "La contrasena debe tener al menos 8 caracteres"
+	FinSi
+	
+	tieneNumero = Falso
+	para i = 0 hasta Longitud(contra)- 1 Hacer
+		caracter = Subcadena(contra,i,i)
+		Si caracter >= "0" Y caracter <= "9" Entonces
+			tieneNumero = Verdadero
+		FinSi
+	FinPara
+	
+	si no tieneNumero Entonces
+		Escribir "La contrasenia debe contener al menos un numero"
+	FinSi
+	
+	Si Longitud(usuario) >= 6 Y Longitud(contra) >= 8 Y tieneNumero Entonces
+        Escribir "Acceso concedido"
+    FinSi
+FinAlgoritmo
