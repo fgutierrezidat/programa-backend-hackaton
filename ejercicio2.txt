@@ -1,0 +1,9 @@
+Algoritmo convertirCentimetrosMilimetros
+	Definir metros,totalCent, totalMil como Real
+	Escribir "Ingresar cantidad de metros: "
+	Leer metros
+	totalCent=metros*100
+	totalMil=metros*1000
+	Escribir metros, "m Convertido a centimetros: " , totalCent
+	Escribir metros, "m Convertido a milimetros: " , totalMil
+FinAlgoritmo
