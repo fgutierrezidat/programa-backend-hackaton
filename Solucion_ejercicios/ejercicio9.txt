@@ -1,0 +1,17 @@
+Algoritmo Clasificar_segun_rareza
+	Escribir "Ingresa un numero : "
+	Leer num 
+
+	Si  num % 2 == 0 y num < 50 Entonces
+	escribir "Es un  numero discreto"
+	FinSi
+
+	si num % 2 <> 0 y num > 100 Entonces
+	escribir "Es un numero rebelde"
+	FinSi
+
+	si num % 7 == 0 Entonces
+	Escribir "Es un numero mistico"
+	FinSi
+FinAlgoritmo
+
