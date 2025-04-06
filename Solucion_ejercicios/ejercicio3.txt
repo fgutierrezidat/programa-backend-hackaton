@@ -1,0 +1,7 @@
+Algoritmo conver_soles_dolares
+	dolar <- 3.60
+	Escribir "Ingresa el monto en soles: "
+	leer sol
+	convert <- (sol / dolar)
+	Escribir "La conversion es:", convert
+FinAlgoritmo
