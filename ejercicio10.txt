@@ -1,0 +1,12 @@
+Algoritmo edadFuturo
+	Definir edadActual, edadEn5, edadEn10, edadEn20 Como Entero
+	
+	Escribir "Ingrese su edad actual:"
+	Leer edadActual
+	
+	edadEn5 = edadActual + 5
+	edadEn10 = edadActual + 10
+	edadEn20 = edadActual + 20
+	
+	Escribir "Dentro de 5 años: ",  edadEn5, " - Dentro de 10 años: ", edadEn10, " - Dentro de 20 años: ", edadEn20
+FinAlgoritmo
