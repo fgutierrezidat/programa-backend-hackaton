@@ -1,0 +1,121 @@
+1. Calcular la edad de una persona en el año actual
+Algoritmo CalcularEdad
+    Escribir "Ingrese el año de nacimiento:"
+    Leer nacimiento
+    Escribir "Ingrese el año actual:"
+    Leer actual
+    edad <- actual - nacimiento
+    Escribir "Su edad es: ", edad
+FinAlgoritmo
+2. Convertir metros a centímetros y milímetros
+Algoritmo CentimetrosAMilimetros
+    Escribir "Ingrese la cantidad de centímetros:"
+    Leer centimetros
+    milimetros <- centimetros * 10
+    Escribir "Equivale a ", milimetros, " milímetros"
+FinAlgoritmo
+3. Convertir soles a dólares
+Algoritmo SolesADolares
+    Escribir "Ingrese el monto en soles:"
+    Leer soles
+    tipoCambio <- 3.66
+    dolares <- soles / tipoCambio
+    Escribir "Equivale a $", dolares
+FinAlgoritmo
+4. Verificar si un número es par o impar usando módulo
+Algoritmo ParOImpar
+    Escribir "Ingrese un número:"
+    Leer numero
+    Si numero MOD 2 = 0 Entonces
+        Escribir "El número es par"
+    Sino
+        Escribir "El número es impar"
+    FinSi
+FinAlgoritmo
+5. Contar cuántos números son mayores a 50
+Algoritmo ContarMayoresA50
+    contador <- 0
+    Para i <- 1 Hasta 5 Con Paso 1
+        Escribir "Ingrese el número ", i, ":"
+        Leer numero
+		
+        Si numero > 50 Entonces
+            contador <- contador + 1
+        FinSi
+    FinPara
+    Escribir "Cantidad de números mayores a 50: ", contador
+FinAlgoritmo
+6. Invertir un número
+Algoritmo InvertirNumero
+    Escribir "Ingrese un número:"
+    Leer numero
+    invertido <- 0
+    Mientras numero > 0 Hacer
+        digito <- numero % 10
+        invertido <- invertido * 10 + digito
+        numero <- trunc(numero / 10)
+    FinMientras
+    Escribir "Número invertido: ", invertido
+FinAlgoritmo
+7. Conversor de minutos a segundos
+Algoritmo MinutosASegundos
+    Escribir "Ingrese la cantidad de minutos:"
+    Leer minutos
+    segundos <- minutos * 60
+    Escribir "Equivale a ", segundos, " segundos"
+FinAlgoritmo
+8. Validación de credenciales mínimas
+Algoritmo ValidarCredenciales
+    Escribir "Ingrese nombre de usuario:"
+    Leer usuario
+    Escribir "Ingrese contraseña:"
+    Leer contrasena
+    tieneNumero <- FALSO
+    Para i <- 1 Hasta Longitud(contrasena)
+        caracter <- Subcadena(contrasena, i, i)
+        Si caracter >= "0" Y caracter <= "9" Entonces
+            tieneNumero <- VERDADERO
+        FinSi
+    FinPara
+    Si Longitud(usuario) >= 6 Y Longitud(contrasena) >= 8 Y tieneNumero Entonces
+        Escribir "Acceso concedido"
+    Sino
+        Si Longitud(usuario) < 6 Entonces
+            Escribir "El usuario debe tener al menos 6 caracteres"
+        FinSi
+        Si Longitud(contrasena) < 8 Entonces
+            Escribir "La contraseña debe tener al menos 8 caracteres"
+        FinSi
+        Si tieneNumero = FALSO Entonces
+            Escribir "La contraseña debe incluir al menos un número"
+        FinSi
+    FinSi
+FinAlgoritmo
+9. Clasificar de números según rareza
+Algoritmo ClasificarNumero
+    Definir numero Como Entero
+    
+    Escribir "Introduce un número entero:"
+    Leer numero
+    
+    Si (numero < 50 Y numero MOD 2 = 0) Entonces
+        Escribir "Número discreto"
+    FinSi
+    
+    Si (numero > 100 Y numero MOD 2 <> 0) Entonces
+        Escribir "Número rebelde"
+    FinSi
+    
+    Si (numero MOD 7 = 0) Entonces
+        Escribir "Número místico"
+    FinSi
+FinAlgoritmo
+10. Edad en el futuro
+Algoritmo EdadFutura
+    Escribir "Ingrese su edad actual:"
+    Leer edad
+    edad5 <- edad + 5
+    edad10 <- edad + 10
+    edad20 <- edad + 20
+    Escribir edad5, " - ", edad10, " - ", edad20
+FinAlgoritmo
