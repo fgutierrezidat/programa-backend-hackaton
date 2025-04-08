@@ -1,0 +1,20 @@
+Algoritmo Ejercicio5_ContarNumerosMayoresA50
+	// Declarar variables
+	Definir numero Como Entero
+	Definir contadorMayores Como Entero
+	contadorMayores <- 0
+	
+	// Solicitar y procesar los números
+	Para i <- 1 Hasta 5 Hacer
+		Escribir "Ingrese el número ", i, " por favor:"
+		Leer numero
+		
+		// Verificar si el número es mayor a 50
+		Si numero > 50 Entonces
+			contadorMayores <- contadorMayores + 1
+		FinSi
+	FinPara
+	
+	// Mostrar el resultado
+	Escribir "La cantidad de números mayores a 50 es: ", contadorMayores
+FinAlgoritmo

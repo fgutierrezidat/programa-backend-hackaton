@@ -1,0 +1,9 @@
+Algoritmo Ejercicio10_CalcularEdadFutura
+	Definir edad_actual, edad_5, edad_10, edad_20 Como Entero
+    Escribir "Ingrese su edad actual por favor:"
+    Leer edad_actual
+    edad_5 <- edad_actual + 5
+    edad_10 <- edad_actual + 10
+    edad_20 <- edad_actual + 20
+    Escribir "Sus edades dentro de 5, 10 y 20 años siguientes serán: ", edad_5, "-", edad_10, "-", edad_20
+FinAlgoritmo
