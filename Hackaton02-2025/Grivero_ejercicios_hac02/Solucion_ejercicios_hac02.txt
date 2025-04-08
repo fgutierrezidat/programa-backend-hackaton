@@ -1,0 +1,168 @@
+Ejercicio 1
+Algoritmo  Calcular_edad
+	Definir annonacimiento, annoactual, edad Como Entero
+	Escribir "Ingresa tu a�o de nacimiento"
+	Leer annonacimiento
+	Escribir "Ingresa en a�o actual"
+	Leer annoactual
+	Edad <- annoactual - annonacimiento
+	Escribir "Tu edad es: ", edad
+	FinAlgoritmo
+
+Ejercicio 2
+Algoritmo conversiones 
+	//Definir variables
+	Definir metros, centimetros, milimetros Como Real
+	// solicitar datos de entrada
+	Escribir "Ingresa los metros"
+	Leer metros
+	// hacer la conversion
+	centimetros <- metros * 100
+	milimetros <- metros * 1000
+	//mostral los resultados
+	Escribir metros, " son igual a:", centimetros, ",centimetros."
+	Escribir metros, " son igual a:", milimetros, ",milimetros."
+FinAlgoritmo
+
+Ejercicio 3
+Algoritmo convertir_soles_a_dolares
+	Definir soles, dolares, conversion Como Real
+	dolares <- 3.60
+	Escribir "Ingrese monto en soles"
+	leer soles
+	conversion <- soles/dolares
+	escribir "la cantidad en dolares es:", conversion
+
+FinAlgoritmo
+
+Ejercicio 4
+Algoritmo verificar_si_es_par_o_impar
+	Definir n Como Entero
+	escribir "introduce un numero entero"
+	leer n
+	Si n MOD 2==0 Entonces
+		escribir "Es par"
+	SiNo
+		Escribir "es impar"
+	FinSi
+	
+FinAlgoritmo
+
+
+Ejercicio 5
+Algoritmo contar_mayores_de_50
+	Definir i,a,b,c,n como entero
+	a = 0
+	b = 0
+	c = 0
+	para i <- 1 hasta 5 Con Paso 1 Hacer
+		Escribir "Ingresa un numero"
+		leer n
+		si n > 50 entonces
+			a = a + 1
+		SiNo
+			si n <= 50 Entonces
+				b = b + 1
+			FinSi
+		FinSi
+	FinPara
+	escribir "numeros mayores a 50: ", a
+	
+FinAlgoritmo
+
+
+Ejercicio 6
+Algoritmo Invertir_numero
+	Definir residuo, invertido Como Entero
+	Definir num como real
+	escribir sin saltar "ingrese un numero entero"
+	leer num
+	invertido <- 0 
+	mientras num <> 0 Hacer
+		residuo <- num % 10
+		invertido <- invertido * 10 + residuo
+		num <- (num - residuo) /10
+	FinMientras
+	Escribir "el numero invertido es: " , invertido
+FinAlgoritmo
+
+
+Ejercicio 7
+Algoritmo conversor_minutos_segundos
+	definir min, seg Como Entero
+	escribir "Ingrese la cantidad de minutos"
+	leer min
+	seg <- min * 60
+	escribir " la cantidad de segundos es de : " , seg
+	
+FinAlgoritmo
+
+
+Ejercicio 8
+Algoritmo Validacion_de_credenciales
+	Definir usuario, contrasena como caracter
+	definir i como entero
+	definir tieneNumero Como Logico
+	definir usuarioValido Como Logico
+	definir contrasenaValido Como Logico
+	
+	tieneNumero <- Falso
+	
+	Escribir "Ingrese un usuario"
+	leer usuario
+	
+	Escribir "Ingrese contrasena"
+	leer contrasena
+	
+	para i <- 1 hasta longitud(contrasena) Hacer
+		si Subcadena(contrasena, i, i) >= "0" y Subcadena(contrasena, i, i) <= "9" Entonces
+			tieneNumero <- verdadero
+		FinSi
+	FinPara
+	
+	usarioValido <- longitud(usuario) >= 6
+	contrasenaValido <- longitud(contrasena) >= 8
+	
+	si usuarioValido y contrasenaValido y tieneNumero Entonces
+		escribir "acceso concedido"
+	sino 
+		si !usuarioValido Entonces
+			Escribir "El usuario debe tener al menos 6 caracteres"
+		FinSi
+		si !contrasenaValido entonces
+			escribir "La contrasena debe tener al menos 8 caracteres"
+		FinSi
+		si !tieneNumero entonces
+			escribir "La contrasena debe contener al menos un numero"
+		FinSi
+	FinSi
+FinAlgoritmo
+
+
+Ejercicio 9
+Algoritmo clasificar_un_numero_segun_su_rareza
+	definir num Como Entero
+		escribir "Ingrese un numero entero"
+	leer num
+	si num % 2 = 0 y num > 50 Entonces
+		escribir "numero discreto"
+	FinSi
+	si num % 2 <> 0 y num > 100 entonces 
+		escribir "numero rebelde"
+	FinSi
+	si num % 7 = 0 Entonces
+		Escribir "numero mistico"
+	FinSi
+FinAlgoritmo
+
+
+Ejercicio 10
+Algoritmo Edad_dentro_de
+	Definir edad, dentrodecinco, dentrodediez, dentrodeveinte Como Entero
+	Escribir "ingrese su edad actual"
+	leer edad
+	dentrodecinco <- edad + 5
+	dentrodediez <- edad + 10
+	dentrodeveinte <- edad + 20
+	Escribir "Edad dentro de 5 a�os: ", dentrodecinco, "  Edad dentro de 10 a�os:  ", dentrodediez, "  Edad dentro de 20 a�os:  ", dentrodeveinte 
+	FinAlgoritmo
