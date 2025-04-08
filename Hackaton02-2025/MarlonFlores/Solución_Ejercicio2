@@ -1,0 +1,9 @@
+Algoritmo Ejercicio2_ConvertirMetrosAUnidades
+    Definir metros, centimetros, milimetros Como Real
+    Escribir "Ingrese la cantidad en metros por favor:"
+    Leer metros
+    centimetros <- metros * 100
+    milimetros <- metros * 1000
+    Escribir "La equivalencia en centímetros es:", centimetros
+    Escribir "La equivalencia en milímetros es:", milimetros
+FinAlgoritmo

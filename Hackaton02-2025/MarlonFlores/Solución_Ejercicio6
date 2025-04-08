@@ -1,0 +1,15 @@
+Algoritmo Ejercicio6_InvertirNumero
+	Definir numero Como Entero
+	Escribir "Ingrese un número entero por favor:"
+    Leer numero
+    invertido <- 0
+	
+    Mientras numero <> 0 Hacer
+        digito <- numero MOD 10
+        invertido <- invertido * 10 + digito
+        numero <- Trunc(numero / 10)  // División entera con Trunc
+    Fin Mientras
+	
+    Escribir "El número invertido es:", invertido
+
+FinAlgoritmo

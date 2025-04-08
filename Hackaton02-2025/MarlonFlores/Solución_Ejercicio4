@@ -1,0 +1,10 @@
+Algoritmo Ejercicio4_VerificarParImpar
+	Definir numero Como Entero
+	Escribir "Ingrese un número entero por favor:"
+    Leer numero
+    Si numero % 2 = 0 Entonces
+        Escribir "El número ingresado es par."
+    SiNo
+        Escribir "El número ingresado es impar."
+    Fin Si
+FinAlgoritmo
