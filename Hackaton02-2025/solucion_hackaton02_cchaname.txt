@@ -1,0 +1,191 @@
+1. Calcular la edad de una persona en el año actual
+Realizar un algoritmo en PSeInt que reciba el año de nacimiento y el año actual.
+Calcular la edad.
+Mostrar el resultado.
+
+Algoritmo CalcularEdad
+	Definir anioNacimiento como Entero
+	Definir anioActual como Entero
+	Definir edad como Entero
+	Escribir "Ingrese su año de nacimiento"
+	Leer anioNacimiento
+	Escribir "Ingrese el año actual"
+	Leer anioActual
+	edad <- anioActual - anioNacimiento
+	Escribir "Su edad es ", edad
+FinAlgoritmo
+
+2. Convertir metros a centímetros y milímetros
+
+Algoritmo ConvertirMetros
+	Definir metros, cm, mm Como Real
+	Escribir "Ingrese los metros a convertir"
+	Leer metros
+	cm <- metros * 100
+	mm <- metros * 1000
+	Escribir "Los ", metros, " m ingresados equivalen a ", cm, " cm y ", mm, " mm."
+FinAlgoritmo
+
+3. Convertir soles a dólares
+Realizar un algoritmo en PSeInt que reciba un monto en soles.
+Convertirlo a dólares usando un tipo de cambio fijo (1 dólar = 3.60 soles).
+Mostrar el resultado.
+
+Algoritmo ConvertirADolares
+	Definir montoSoles, montoDolares, tipoCambio Como Real
+	tipoCambio <- 3.60
+	Escribir "Ingrese la cantidad de soles a cambiar"
+	Leer montoSoles
+	montoDolares <- montoSoles / tipoCambio
+	Escribir "Los ", montoSoles, " soles ingresados equivalen a ", montoDolares, " dolares."
+FinAlgoritmo
+
+4. Verificar si un número es par o impar usando módulo
+Realizar un algoritmo en PSeInt que reciba un número entero.
+Usar el operador módulo (%) para verificar si es par o impar.
+Mostrar el resultado.
+
+Algoritmo ConvertirADolares
+	Definir num, residuo Como Entero
+	Definir resultado Como Caracter
+	Escribir "Ingrese el número a comprobar"
+	leer num
+	residuo <- num % 2
+	si residuo = 0 Entonces
+		resultado <- "PAR"
+	SiNo
+		resultado <- "IMPAR"
+	FinSi
+	Escribir "El número ingresado es ", resultado
+FinAlgoritmo
+
+5. Contar cuántos números son mayores a 50
+Realizar un algoritmo en PSeInt que reciba 5 números enteros.
+Contar cuántos de ellos son mayores a 50.
+Mostrar el resultado.
+
+Algoritmo ContarMayoresA50
+	Definir nums como Entero
+	Dimension nums[5]
+	Definir contador como Entero
+	contador <- 0
+	Para i <- 1 Hasta 5 Con Paso 1 Hacer
+		Escribir "Ingrese el ", i, "° número"
+		Leer nums[i]
+		Si nums[i] > 50 Entonces
+			contador <- contador + 1
+		FinSi
+	FinPara
+	Escribir "De los números ingresados, ", contador, " son mayores a 50."
+FinAlgoritmo
+
+6. Invertir un número
+Realizar un algoritmo en PSeInt que reciba un número entero.
+Mostrar el número invertido.
+Ejemplo: si se ingresa 1234, mostrar 4321.
+
+Algoritmo InvertirNumero
+	Definir numOriginal, digito, numInvertido Como Entero
+	Escribir "Ingrese un número entero:"
+    Leer numOriginal
+	numInvertido <- 0	
+	Mientras numOriginal <> 0 Hacer
+		digito <- numOriginal % 10
+		numInvertido <- numInvertido * 10 + digito
+		numOriginal <- Trunc(numOriginal/10)
+	FinMientras	
+	Escribir "El número invertido es: ", numInvertido
+FinAlgoritmo
+
+7. Conversor de minutos a segundos
+Realizar un algoritmo en PSeInt que pida una cantidad de minutos.
+Convertir esa cantidad a segundos.
+Mostrar el resultado.
+
+Algoritmo ConvertirASegundos
+	Definir minutos, segundos como Entero
+	Escribir "Ingresa la cantidad de minutos a convertir"
+	Leer minutos
+	segundos <- minutos * 60
+	Escribir "Los ", minutos, " minutos ingresados equivalen a ", segundos, " segundos."
+FinAlgoritmo
+
+8. Validación de credenciales mínimas
+Realizar un algoritmo en PSeInt que reciba un nombre de usuario y una contraseña.
+Validar si el usuario tiene al menos 6 caracteres y la contraseña al menos 8 caracteres incluyendo al menos un número.
+Mostrar "Acceso concedido" si ambas condiciones se cumplen; de lo contrario, indicar qué regla no se cumplió.
+
+Algoritmo ValidarCredenciales
+	Definir usuario, contrasena Como Cadena
+	Definir i Como Entero
+	Definir caract Como Caracter
+	Definir tieneNumero Como Logico
+	
+	Escribir "Ingrese su nombre de usuario:"
+	Leer usuario
+	
+	Escribir "Ingrese su contraseña:"
+	Leer contrasena
+	
+	Si Longitud(usuario) < 6 Entonces
+		Escribir "Error: El nombre de usuario debe contener almenos 6 caracteres."
+	SiNo
+		Si Longitud(contrasena) < 8 Entonces
+			Escribir "Error: La contraseña debe contener almenos 8 caracteres."
+		SiNo
+			tieneNumero <- falso
+			Para i <- 1 Hasta Longitud(contrasena) Con Paso 1 Hacer
+				caract <- Subcadena(contrasena,i,i)
+				Si  caract >= "0" Y caract <= "9" Entonces
+					tieneNumero <- Verdadero
+				FinSi			
+			FinPara
+			Si tieneNumero = falso Entonces
+				Escribir "Error: La contraseña debe contener almenos 1 número."
+			SiNo
+				Escribir "El usuario y contraseña son correctos."
+			FinSi
+		FinSi	
+	FinSi
+FinAlgoritmo
+
+9. Clasificar de números según rareza
+Realizar un algoritmo en PSeInt que reciba un número entero.
+Clasificarlo según estas reglas:
+Si es par y menor que 50 → "Número discreto".
+Si es impar y mayor que 100 → "Número rebelde".
+Si es múltiplo de 7 → "Número místico".
+Mostrar todos los títulos que se apliquen.
+
+Algoritmo ClasificarNumero
+	Definir num Como Entero
+	Definir resultado como Cadena
+	Escribir "Ingrese un número entero:"
+	Leer num
+	Si num MOD 2 = 0 Y num < 50 Entonces
+		resultado = " Número discreto"
+	FinSi
+	Si num MOD 2 <> 0 Y num > 100 Entonces
+		resultado = resultado + " Número rebelde"
+	FinSi
+	Si num MOD 7 = 0 Entonces
+		resultado = resultado + " Número místico"
+	FinSi
+	Escribir resultado
+FinAlgoritmo
+
+10. Edad en el futuro
+Realizar un algoritmo en PSeInt que pida la edad actual del usuario.
+Calcular su edad dentro de 5, 10 y 20 años.
+Mostrar los tres resultados en una sola línea separada por guiones.
+
+Algoritmo EdadDentroDe
+	Definir edad, dentroDeCinco, dentroDeDiez, dentroDeVeinte Como Entero
+	Escribir "Ingrese su edad actual:"
+	Leer edad
+	dentroDeCinco <- edad + 5
+	dentroDeDiez <- edad + 10
+	dentroDeVeinte <- edad + 20
+	Escribir "Edad dentro de 5 años: ", dentroDeCinco, " - Dentro de 10 años: ", dentroDeDiez, " - Dentro de 20 años: ", dentroDeVeinte
+FinAlgoritmo
+
