@@ -1,0 +1,132 @@
+1. 
+	Escribir '¿En que año naciste?';
+
+	Leer a1;
+
+	Escribir '¿Que año es ahora?';
+
+	Leer a2;
+
+	e <- a2 - a1;
+
+	Escribir 'Tienes ' e ' años'
+
+2.
+	Escribir 'Ingresa el valor en metros';
+
+	Leer m;
+
+	c <- m*100;
+
+	m <- m*1000;
+
+	Escribir 'El valor en centrimetros es ' c ' y el valor en milimetros es ' m;
+3.
+	Escribir 'Ingresa el valor en soles';
+
+	Leer s;
+
+	d <- s*3.60;
+
+	Escribir 'El valor en dolares es ' d;
+4.
+	Escribir 'Ingresa un numero entero';
+
+	Leer n;
+
+	Si n % 2 = 0 Entonces
+		Escribir 'El numero es par';
+	SiNo
+		Escribir 'El numero es impar';
+	FinSi
+5.
+	Escribir 'Ingresa 5 numeros enteros';
+
+	Dimension numeros[5];
+
+	Para i<-1 Hasta 5 Con Paso 1 Hacer
+		Leer numeros[i];
+	FinPara
+
+	c <- 0
+
+	Para i2<-1 Hasta 5 Con Paso 1 Hacer
+		Si numeros[i2] > 50 Entonces
+			c <- c + 1;
+		FinSi
+	FinPara
+
+	Escribir c ' numeros son mayores a 50';
+6.
+	Definir texto, invertido Como Cadena
+	
+	Leer num;
+	t <- ConvertirATexto(num);
+	invertido <- ""
+	
+	Para i <- Longitud(t) Hasta 1 Con Paso -1
+		invertido <- invertido + SubCadena(t, i, i)
+	FinPara
+	
+	Escribir "Número invertido como texto: ", invertido
+7.
+	Escribir 'Ingresa la cantidad de minutos deseada';
+	
+	Leer m;
+	
+	s <- m*60;
+	
+	Escribir 'La cantidad equivalente en segundos es ' s;
+8.
+	Escribir 'Ingresa tu usuario';
+	
+	Leer u;
+	
+	Escribir 'Ingresa tu contraseña';
+	
+	Leer c;
+	
+	v <- Falso;
+	
+	Si Longitud(u) >= 6 Y Longitud(c) >= 8 Entonces
+		Para i <- 1 Hasta Longitud(c)
+			Si SubCadena(c, i, i) >= "0" Y SubCadena(c, i, i) <= "9" Entonces
+				v <- Verdadero;
+			FinSi
+		FinPara
+		Si v = Verdadero Entonces
+			Escribir 'Acceso concedido';
+		SiNo
+			Escribir 'La contraseña debe contener al menos un numero';
+		FinSi
+	SiNo
+		Si Longitud(u) < 6
+			Escribir 'El usuario debe contener al menos 6 caracteres';
+		FinSi
+		Si Longitud(c) < 6
+			Escribir 'La contraseña debe contener al menos 6 caracteres';
+		FinSi
+9.
+	Escribir 'Ingresa un numero entero';
+	
+	Leer n;
+	
+	Si n % 2 = 0 Y n < 50 Entonces
+		Escribir 'Numero discreto';
+	FinSi
+	Si n % 2 = 1 Y n > 100 Entonces
+		Escribir 'Numero rebelde';
+	FinSi
+	Si n % 7 = 0 Entonces
+		Escribir 'Numero mistico';
+	FinSi
+10.
+	Escribir 'Ingresa tu edad';
+	
+	Leer e;
+	
+	a1 <- e + 5;
+	a2 <- e + 10;
+	a3 <- e + 20;
+	
+	Escribir 'Tu edad en 5, 10 y 20 años sera ' a1 ' - ' a2 ' - ' a3 ' respectivamente';
