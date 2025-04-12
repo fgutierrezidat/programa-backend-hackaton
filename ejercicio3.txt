@@ -1,7 +1,0 @@
-Algoritmo convertirSolesADolares
-	Definir soles, resultado Como Real
-	Escribir "Ingresar cantidad de Soles: "
-	Leer soles
-	resultado=soles*3.60
-	Escribir soles , " convertido a dolares es: " ,resultado
-FinAlgoritmo

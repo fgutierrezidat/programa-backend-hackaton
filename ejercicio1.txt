@@ -1,8 +1,0 @@
-Algoritmo calcularEdadPersona
-	Escribir "Ingresar año actual"
-	Leer annoActual
-	Escribir "Ingresar año de nacimiento"
-	Leer annoNacimiento
-	edad=annoActual-annoNacimiento
-	Escribir "Tu edad es: ", edad , " años"
-FinAlgoritmo
