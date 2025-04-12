@@ -1,0 +1,164 @@
+1.
+let numero = parseInt(prompt("Ingresa un número:"));
+
+if (numero % 3 === 0 && numero % 5 === 0) {
+  console.log("Múltiplo3y5");
+} else if (numero % 3 === 0) {
+  console.log("Múltiplo3");
+} else if (numero % 5 === 0) {
+  console.log("Múltiplo5");
+} else {
+  console.log("No es múltiplo de 3 ni de 5");
+}
+
+2.
+let operacion = prompt("Ingresa la operación (+, -, *, /):");
+let numero1 = parseFloat(prompt("Ingresa el primer número:"));
+let numero2 = parseFloat(prompt("Ingresa el segundo número:"));
+let resultado;
+
+switch (operacion) {
+  case "+":
+    resultado = numero1 + numero2;
+    console.log("Resultado:", resultado);
+    break;
+  case "-":
+    resultado = numero1 - numero2;
+    console.log("Resultado:", resultado);
+    break;
+  case "*":
+    resultado = numero1 * numero2;
+    console.log("Resultado:", resultado);
+    break;
+  case "/":
+    if (numero2 === 0) {
+      console.log("Error: División por cero no permitida.");
+    } else {
+      resultado = numero1 / numero2;
+      console.log("Resultado:", resultado);
+    }
+    break;
+  default:
+    console.log("Operación no válida.");
+}
+3.
+const usuarioCorrecto = "ePeralta";
+const contrasenaCorrecta = "ePeralta123";
+
+let intentos = 0;
+let accesoConcedido = false;
+
+while (intentos < 3) {
+  let usuario = prompt("Usuario:");
+  let contrasena = prompt("Contraseña:");
+
+  if (usuario === usuarioCorrecto && contrasena === contrasenaCorrecta) {
+    console.log("¡Inicio de sesión exitoso!");
+    accesoConcedido = true;
+    break;
+  } else {
+    intentos++;
+    console.log(`Datos incorrectos. Intento ${intentos} de 3.`);
+  }
+}
+
+if (!accesoConcedido) {
+  console.log("Acceso bloqueado. Demasiados intentos fallidos.");
+}
+4.
+let edad = parseInt(prompt("Ingresa tu edad:"));
+
+if (edad < 12) {
+  console.log("niño");
+} else if (edad >= 12 && edad <= 17) {
+  console.log("adolescente");
+} else if (edad >= 18 && edad <= 59) {
+  console.log("adulto");
+} else if (edad >= 60) {
+  console.log("adulto mayor");
+} else {
+  console.log("Edad no válida");
+}
+5.
+let año = parseInt(prompt("Ingresa un año:"));
+
+if (año % 4 === 0) {
+  if (año % 100 === 0) {
+    if (año % 400 === 0) {
+      console.log("El año es bisiesto");
+    } else {
+      console.log("No es bisiesto");
+    }
+  } else {
+    console.log("El año es bisiesto");
+  }
+} else {
+  console.log("No es bisiesto");
+}
+6.
+let numero = parseInt(prompt("Ingresa un número del 1 al 10:"));
+
+if (numero >= 1 && numero <= 10) {
+  for (let i = 1; i <= 12; i++) {
+    console.log(`${numero} x ${i} = ${numero * i}`);
+  }
+} else {
+  console.log("Número fuera del rango permitido.");
+}
+7.
+let n = parseInt(prompt("Ingresa un número entero para calcular su factorial:"));
+let factorial = 1;
+
+if (n < 0) {
+  console.log("El factorial no está definido para números negativos.");
+} else {
+  for (let i = 1; i <= n; i++) {
+    factorial *= i;
+  }
+  console.log(`El factorial de ${n} es: ${factorial}`);
+}
+8.
+let opcion;
+
+do {
+  opcion = prompt("Elige una opción:\n1. Suma\n2. Resta\n3. Salir");
+
+  switch (opcion) {
+    case "1":
+      let a = parseFloat(prompt("Ingresa el primer número:"));
+      let b = parseFloat(prompt("Ingresa el segundo número:"));
+      console.log(`Resultado de la suma: ${a + b}`);
+      break;
+    case "2":
+      a = parseFloat(prompt("Ingresa el primer número:"));
+      b = parseFloat(prompt("Ingresa el segundo número:"));
+      console.log(`Resultado de la resta: ${a - b}`);
+      break;
+    case "3":
+      console.log("Saliendo del programa...");
+      break;
+    default:
+      console.log("Opción no válida");
+  }
+} while (opcion !== "3");
+9.
+let n1 = parseFloat(prompt("Ingresa el primer número:"));
+let n2 = parseFloat(prompt("Ingresa el segundo número:"));
+let n3 = parseFloat(prompt("Ingresa el tercer número:"));
+
+if (n1 > n2 && n1 > n3) {
+  console.log(`El mayor es: ${n1}`);
+} else if (n2 > n1 && n2 > n3) {
+  console.log(`El mayor es: ${n2}`);
+} else if (n3 > n1 && n3 > n2) {
+  console.log(`El mayor es: ${n3}`);
+} else {
+  console.log("Hay números iguales o todos son iguales.");
+}
+10.
+let inicio = parseInt(prompt("Ingresa un número para iniciar la cuenta regresiva:"));
+
+while (inicio >= 0) {
+  console.log(inicio);
+  inicio--;
+}
