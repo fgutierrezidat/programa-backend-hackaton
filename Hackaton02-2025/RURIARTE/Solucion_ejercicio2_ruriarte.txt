@@ -1,0 +1,16 @@
+Algoritmo sin_titulo
+	Definir metros como Real;
+	Definir centimetros Como Real;
+	Definir milimetros Como Real;
+	
+	Escribir "Ingrese cantidad en metros";
+	Leer metros;
+	
+	//Convertimos
+	centimetros <- metros * 100;
+	milimetros <- metros * 1000;
+	
+	Escribir "Equivalente en centímetros: ", centimetros
+    Escribir "Equivalente en milímetros: ", milimetros
+	
+FinAlgoritmo

@@ -1,0 +1,11 @@
+Algoritmo sin_titulo
+	Definir sol como real;
+	Definir dol como real;
+	
+	Escribir "Ingrese la cantidad en soles a convertir a dolares:" ;
+	Leer sol;
+	
+	dol <- sol / 3.6;
+	
+	Escribir "El equivalente en dólares es:", dol;
+FinAlgoritmo
