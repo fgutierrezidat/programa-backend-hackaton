@@ -1,0 +1,25 @@
+Algoritmo ejercicio3
+	intentos = 0
+    accesoCorrecto = Falso
+	
+    Mientras intentos < 3 Y accesoCorrecto = Falso Hacer
+        Escribir "Ingrese el usuario:"
+        Leer usuario
+		
+        Escribir "Ingrese la contraseña:"
+        Leer clave
+		
+        Si usuario = "admin" Y clave = "1234" Entonces
+            accesoCorrecto <- Verdadero
+        Sino
+            intentos = intentos + 1
+            Escribir "Datos incorrectos. Intento ", intentos, " de 3."
+        FinSi
+    FinMientras
+	
+    Si accesoCorrecto Entonces
+        Escribir "Inicio de sesión exitoso."
+    Sino
+        Escribir "Cuenta bloqueada por demasiados intentos fallidos."
+    FinSi
+FinAlgoritmo

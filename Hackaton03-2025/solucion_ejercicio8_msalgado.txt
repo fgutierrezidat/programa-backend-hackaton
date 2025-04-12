@@ -1,0 +1,35 @@
+Algoritmo ejercicio8
+	Repetir
+        Escribir "===== MENÚ ====="
+        Escribir "1. Suma"
+        Escribir "2. Resta"
+        Escribir "3. Salir"
+        Escribir "Seleccione una opción:"
+        Leer opcion
+		
+        Si opcion = 1 Entonces
+            Escribir "Ingrese el primer número:"
+            Leer num1
+            Escribir "Ingrese el segundo número:"
+            Leer num2
+            resultado = num1 + num2
+            Escribir "Resultado de la suma: ", resultado
+        Sino
+            Si opcion = 2 Entonces
+                Escribir "Ingrese el primer número:"
+                Leer num1
+                Escribir "Ingrese el segundo número:"
+                Leer num2
+                resultado = num1 - num2
+                Escribir "Resultado de la resta: ", resultado
+            Sino
+                Si opcion <> 3 Entonces
+                    Escribir "Opción no válida, intente nuevamente."
+                FinSi
+            FinSi
+        FinSi
+		
+    Hasta Que opcion = 3
+	
+    Escribir "Programa finalizado."
+FinAlgoritmo

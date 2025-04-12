@@ -1,0 +1,18 @@
+Algoritmo ejercicio5
+	Escribir "Ingrese un año:"
+    Leer año
+	
+    Si año % 4 = 0 Entonces
+        Si año % 100 = 0 Entonces
+            Si año % 400 = 0 Entonces
+                Escribir "Es un año bisiesto."
+            Sino
+                Escribir "No es un año bisiesto."
+            FinSi
+        Sino
+            Escribir "Es un año bisiesto."
+        FinSi
+    Sino
+        Escribir "No es un año bisiesto."
+    FinSi
+FinAlgoritmo
