@@ -1,7 +1,0 @@
-Algoritmo Ejercicio7_ConvertirMinutosASegundos
-	Definir minutos, segundos Como Entero
-	Escribir "Ingrese la cantidad de minutos por favor:"
-    Leer minutos
-    segundos <- minutos * 60
-    Escribir "La cantidad de segundos es:", segundos
-FinAlgoritmo
