@@ -1,0 +1,12 @@
+//Solución ejercicio 7
+let numero = parseInt(prompt("Ingrese el número para calcular el factorial: "));
+
+if (numero>=0){
+    let factorial =1;
+    for (i=1; i<=numero; i++){
+        factorial=factorial*i;
+    }
+    console.log(`El factorial de ${numero} es ${factorial}`);
+} else{
+    console.log("El número ingresado es inválido para calcular el factorial")
+}

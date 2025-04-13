@@ -1,0 +1,8 @@
+Algoritmo Ejercicio3_ConvertirSolesaDolares
+	Definir montoSoles, montoDolares Como Real
+	tipoCambio<-3.60
+	Escribir "Ingrese el monto en moneda soles: "
+	Leer montoSoles
+	montoDolares<-montoSoles/tipoCambio
+	Escribir "El monto convertido a dólares es: ", montoDolares
+FinAlgoritmo

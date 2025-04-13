@@ -1,0 +1,9 @@
+Algoritmo Ejericio1_CalcularEdad
+    Definir AnioNacimiento, AnioActual, Edad Como Entero
+	Escribir "Ingrese el año de nacimiento por favor:"
+    Leer AnioNacimiento
+    Escribir "Ingrese el año actual:"
+    Leer AnioActual
+    Edad <- AnioActual - AnioNacimiento
+    Escribir "La edad de la persona es: ", Edad
+FinAlgoritmo

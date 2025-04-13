@@ -1,0 +1,18 @@
+Algoritmo Ejercicio9_ClasificarNumeroRareza
+	Definir numero Como Entero
+	Escribir "Ingresa un número entero por favor:"
+    Leer numero
+
+    Si numero % 2 = 0 Y numero < 50 Entonces
+        Escribir "Número discreto"
+    Fin Si
+	
+    Si numero % 2 <> 0 Y numero > 100 Entonces
+        Escribir "Número rebelde"
+    Fin Si
+	
+    Si numero % 7 = 0 Entonces
+        Escribir "Número místico"
+    Fin Si
+
+FinAlgoritmo

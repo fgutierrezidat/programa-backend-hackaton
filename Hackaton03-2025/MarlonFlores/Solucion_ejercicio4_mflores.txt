@@ -1,0 +1,15 @@
+//Solución ejercicio 4
+
+let edad=parseInt(prompt("Ingrese su edad: "));
+
+if (edad<12 && edad >0){
+    console.log("niño");
+} else if (edad>=12 && edad <18){
+    console.log("adolescente");
+} else if (edad>= 18 && edad<60){
+    console.log("adulto");
+} else if (edad >=60){
+    console.log("adulto mayor");
+} else {
+    console.log("Edad ingresada inválida");
+}

@@ -1,0 +1,16 @@
+//Solución ejercicio 1
+
+function verificarMultiplo(numero) {
+    if (numero % 3 === 0 && numero % 5 === 0) {
+        console.log("Múltiplo3y5");
+    } else if (numero % 3 === 0) {
+        console.log("Múltiplo3");
+    } else if (numero % 5 === 0) {
+        console.log("Múltiplo5");
+    } else {
+        console.log("No es múltiplo de 3 ni de 5");
+    }
+}
+
+const numero = parseInt(prompt("Ingresa un número:"));
+verificarMultiplo(numero);
