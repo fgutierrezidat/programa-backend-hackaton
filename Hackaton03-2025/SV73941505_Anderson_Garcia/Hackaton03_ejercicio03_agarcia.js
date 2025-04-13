@@ -19,6 +19,6 @@ while(intentos < 3){
         console.log(`Usuario y/o contraseña incorrecto, intento ${intentos} de 3.`);
     }
     if (intentos === 3 ){
-        console.log("Has fallado 3 veces, se te bloqueara")
+        console.log("Has fallado 3 veces, se te bloqueara");
     }
 }
