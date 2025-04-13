@@ -1,0 +1,6 @@
+//Solución ejercicio 8
+let opcion;
+do {
+    console.log("Opciones del menú:\n1. Suma\n2. Resta\n3. Salir");
+    opcion= parseInt(prompt("Elija un número de las opciones: "));
+}while (opcion !==3)

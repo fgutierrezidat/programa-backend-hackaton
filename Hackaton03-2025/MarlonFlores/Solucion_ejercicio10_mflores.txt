@@ -1,0 +1,8 @@
+//Solución ejercicio 10
+
+let numero = parseInt(prompt("Ingrese un número para iniciar la cuenta regresiva: "));
+console.log("Iniciando cuenta regresiva");
+while (numero>=0){
+    console.log(numero);
+    numero--;
+}

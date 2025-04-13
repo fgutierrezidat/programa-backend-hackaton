@@ -1,0 +1,25 @@
+//Solucion ejercicio 3
+function iniciarSesion() {
+    const usuarioCorrecto = "mflores";
+    const contrasenaCorrecta = "1234";
+    let intentos = 3;
+
+    while (intentos > 0) {
+        let usuario = prompt("Ingresa tu usuario:");
+        let contrasena = prompt("Ingresa tu contraseña:");
+
+        if (usuario === usuarioCorrecto && contrasena === contrasenaCorrecta) {
+            console.log("Acceso correcto");
+            return; 
+        } else {
+            intentos--;
+            console.log(`Usuario o contraseña incorrectos. Te quedan ${intentos} intentos.`);
+        }
+
+        if (intentos === 0) {
+            console.log("Has sido bloqueado debido a 3 intentos fallidos.");
+        }
+    }
+}
+
+iniciarSesion();
