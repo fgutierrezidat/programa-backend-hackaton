@@ -1,0 +1,151 @@
+1.
+    let numero = parseInt(prompt(`Ingresa un numero`));
+    if(numero % 3 = 0 && numero % 5 = 0) {
+        console.log("Multiplo de 3 y 5");
+    }
+    else if(numero % 3 = 0) {
+        console.log("Multiplo de 3);
+    }
+    else if(numero % 5 = 0 {
+        console.log("Multiplo de 5);
+    })
+
+2.
+    let op = prompt(`Ingresa un signo: +, -, * o /`);
+    let numero = parseInt(prompt(`Ingresa un numero`));
+    let numero2 = parseInt(prompt(`Ingresa un segundo numero`));
+
+    switch (op) {
+        case "+":
+            res = numero + numero2;
+            console.log(res);
+            break;
+        case "-":
+            res = numero - numero2;
+            console.log(res);
+            break;
+        case "*":
+            res = numero * numero2;
+            console.log(res);
+            break;
+        case "/":
+            if(numero2 === 0) {
+                console.log("No se puede dividir entre 0, ingrese otro numero");
+                break;
+            }
+            else {
+                res = numero / numero2;
+                console.log(res);
+                break;
+            }
+    }
+
+3.
+    let pass = "Contraseña";
+    let contra = "";
+    num = 0;
+
+    while(contra != pass && num < 3) {
+        num++;
+        let contra = prompt(`Ingresa la contraseña`);
+        if(contra == pass) {
+            console.log("Has ingresado correctamente");
+            break;
+        }
+    }
+
+    if(num > 3) {
+        console.log("La sesion de ha bloqueado");
+    }
+
+4.
+    let numero = parseInt(prompt(`Ingresa una edad`));
+
+    if(numero >= 60) {
+        console.log("Adulto mayor");
+    }
+    else if(numero >=18) {
+        console.log("Adulto");
+    }
+    else if(numero >= 12) {
+        console.log("Adolescente");
+    }
+    else {
+        console.log("Niño")
+    }
+
+5.
+    let numero = parseInt(prompt(`Ingresa un año`));
+    
+    if(numero % 4 = 0) {
+        if(numero % 100 = 0) {
+            if(numero % 400 = 0) {
+                console.log("Es un año bisiesto");
+            }
+            else {
+                console.log("No es un año bisiesto");
+            }
+        }
+        else {
+            console.log("Es un año bisiesto");
+        }
+    }
+    else {
+        console.log("No es un año bisiesto");
+    }
+
+6.
+    let numero = parseInt(prompt(`Ingresa un numero del 1 al 10`));
+
+    for(let i = 1; i < 13; i++) {
+        let multi = i*numero;
+        console.log(`${numero} multiplicado por ${i} es igual a ${multi}`);
+    }
+
+7.
+    let numero = parseInt(prompt(`Ingresa un numero`));
+    let res = 1;
+
+    for(let i = 1; i <= numero; i++) {
+        res = res*i
+    }
+
+    console.log(`El factorial de ${numero} es igual a ${res}`);
+
+8.
+    do {
+        let comm = prompt(`Ingresa suma, resta o salir`)
+        switch(comm) {
+            case "suma":
+                console.log("Sumando...");
+            case "resta":
+                console.log("Restando...");
+            default:
+                console.log("Comando desconocido");
+        }
+    } while(comm != "salir");
+    
+
+9.
+    let num1 = parseInt(prompt(`Ingresa un numero`));
+    let num2 = parseInt(prompt(`Ingresa un segundo numero`));
+    let num3 = parseInt(prompt(`Ingresa un tercer numero`));
+
+    if(num1 > num2 && num1 > num3) {
+        console.log(`${num1} es el mayor`);
+    }
+    else if(num2 > num1 && num2 > num3) {
+        console.log(`${num2} es el mayor`);
+    }
+    else if(num3 > num1 && num3 > num2) {
+        console.log(`${num3} es el mayor`);
+    }
+
+10.
+
+    let numero = parseInt(prompt(`Ingresa un numero`));
+
+    while(numero >= 0) {
+        console.log(numero);
+        numero = numero - 1;
+    }
