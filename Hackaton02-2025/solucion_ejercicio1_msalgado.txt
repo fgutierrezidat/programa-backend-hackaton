@@ -6,3 +6,4 @@ Algoritmo calcularEdadPersona
 	edad=annoActual-annoNacimiento
 	Escribir "Tu edad es: ", edad , " años"
 FinAlgoritmo
+

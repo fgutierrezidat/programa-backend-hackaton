@@ -5,3 +5,4 @@ Algoritmo convertirSolesADolares
 	resultado=soles*3.60
 	Escribir soles , " convertido a dolares es: " ,resultado
 FinAlgoritmo
+

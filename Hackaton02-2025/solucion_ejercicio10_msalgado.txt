@@ -10,3 +10,4 @@ Algoritmo edadFuturo
 	
 	Escribir "Dentro de 5 años: ",  edadEn5, " - Dentro de 10 años: ", edadEn10, " - Dentro de 20 años: ", edadEn20
 FinAlgoritmo
+

@@ -8,3 +8,4 @@ Algoritmo NumeroParoImpar
 		Escribir "El numero es impar"
 	Fin Si
 FinAlgoritmo
+

@@ -8,3 +8,4 @@ Algoritmo invertirNumero
     FinMientras
     Escribir "el numero invertodo es: ", inverso
 FinAlgoritmo
+

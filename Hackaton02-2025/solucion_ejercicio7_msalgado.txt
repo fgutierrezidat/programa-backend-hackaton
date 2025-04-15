@@ -5,3 +5,4 @@ Algoritmo minutosASegundos
 	convSegundos=minutos*60
 	Escribir minutos, " min convertido a segundos: ", convSegundos , " seg"
 FinAlgoritmo
+
