@@ -1,9 +1,0 @@
-Algoritmo verificar_numeropar
-	Escribir "Ingresa un numero entero:"
-	leer num
-	si num % 2 = 0 Entonces
-		Escribir "El numero es par"
-	SiNo
-		Escribir  "El numero es impar"
-	FinSi
-FinAlgoritmo

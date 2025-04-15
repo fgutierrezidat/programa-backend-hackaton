@@ -1,0 +1,39 @@
+Algoritmo ClasificarNumero
+	Definir numero Como Entero
+	Definir valorEncontrado Como Logico
+	
+	Escribir "Ingrese un número entero:"
+	Leer numero
+	
+	valorEncontrado = Falso
+	
+	Si numero MOD 2 == 0 Y numero < 50 Entonces
+		Escribir  "Número discreto"
+		valorEncontrado = Verdadero
+	FinSi
+	
+	Si numero MOD 2 <> 0 Y numero > 100 Entonces
+		Si valorEncontrado Entonces
+			Escribir "Número rebelde"
+		SiNo
+			Escribir  "Número rebelde"
+			valorEncontrado = Verdadero
+		FinSi
+	FinSi
+	
+	Si numero MOD 7 == 0 Entonces
+		Si valorEncontrado Entonces
+			Escribir  "Número místico"
+		SiNo
+			Escribir  "Número místico"
+			valorEncontrado = Verdadero
+		FinSi
+	FinSi
+	
+	Si valorEncontrado Entonces
+		Escribir "El número ingresado es: " numero
+	SiNo
+		Escribir "El número ingresado no cumple con ninguna de las reglas de clasificación."
+	FinSi
+	
+FinAlgoritmo

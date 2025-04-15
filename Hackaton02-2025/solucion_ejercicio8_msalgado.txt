@@ -1,0 +1,36 @@
+Algoritmo ValidarUsuarioContrasena
+	Definir usuario, contrasena Como Caracter
+	Definir longitudUsuario, longitudContrasena, i Como Entero
+	Definir tieneNumero Como Logico
+	
+	Escribir "Ingrese el nombre de usuario:"
+	Leer usuario
+	Escribir "Ingrese la contraseña:"
+	Leer contrasena
+	longitudUsuario = Longitud(usuario)
+	longitudContrasena = Longitud(contrasena)
+	tieneNumero = Falso
+	
+	Para i = 1 Hasta longitudContrasena Hacer
+		Si Subcadena(contrasena, i, i) >= "0" Y Subcadena(contrasena, i, i) <= "9" Entonces
+			tieneNumero = Verdadero
+//			Escribir [Subcadena(contrasena,i,i)]
+		FinSi
+	FinPara
+	
+	Si (longitudUsuario >= 6) Y (longitudContrasena >= 8) Y tieneNumero Entonces
+		Escribir "Acceso concedido"
+	SiNo
+		Escribir "Acceso denegado. Las siguientes reglas no se cumplieron:"
+		Si longitudUsuario < 6 Entonces
+			Escribir " - El nombre de usuario debe tener al menos 6 caracteres."
+		FinSi
+		Si longitudContrasena < 8 Entonces
+			Escribir " - La contraseña debe tener al menos 8 caracteres."
+		FinSi
+		Si No tieneNumero Entonces
+			Escribir " - La contraseña debe incluir al menos un número."
+		FinSi
+	FinSi
+	
+FinAlgoritmo

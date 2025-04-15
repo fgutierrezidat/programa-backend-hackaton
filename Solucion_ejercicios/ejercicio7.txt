@@ -1,6 +1,0 @@
-Algoritmo minutos_segundos
-	Escribir "Ingresa la cantidad de minutos"
-	leer minutos
-	cant_segundos <- minutos * 60
-	Escribir "Esta es la conversion de: ", minutos " minutos a segundos : " cant_segundos 
-FinAlgoritmo

@@ -1,8 +1,0 @@
-Algoritmo cambio_centimetro_milimetros
-	Escribir "Ingresa la cantidad de metros:"
-	Leer  metros
-	centimetros <- (metros * 100)
-	milimetros <- (metros * 1000)
-	Escribir "Esta es la cantidad en centimetros:",centimetros
-	Escribir "Esta es la cantidad en milimetros:", milimetros
-FinAlgoritmo
