@@ -1,0 +1,8 @@
+Algoritmo edad_futura
+	Escribir "Ingresa tu edad actual"
+	Leer edad
+	edad_5anios <- edad + 5 
+	edad_10anios <- edad + 10
+	edad_20anios <- edad + 20
+	Escribir "En 5 anios tendra :", edad_5anios , " , en 10 anios tendra: ", edad_10anios " y en 20 anios tendra: ", edad_20anios
+FinAlgoritmo
