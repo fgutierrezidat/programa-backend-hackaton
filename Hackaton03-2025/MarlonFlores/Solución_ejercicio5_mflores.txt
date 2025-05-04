@@ -1,0 +1,16 @@
+//Solución ejercicio 5
+let aniobisiestro=parseInt(prompt("Ingrese el año, por favor: "));
+
+if(aniobisiestro%4==0){
+    if(aniobisiestro%100==0){
+        if(aniobisiestro%400==0){
+            console.log(`El ${aniobisiestro} es bisiestro`);
+        } else {
+            console.log(`El ${aniobisiestro} no es bisiestro`);
+        }
+    } else {
+        console.log(`El ${aniobisiestro} es bisiestro`);
+    }
+} else{
+    console.log(`El ${aniobisiestro} no es bisiestro`);
+}

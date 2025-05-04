@@ -1,0 +1,30 @@
+//Solución ejercicio 2
+function calculadora() {
+    let operacion = prompt("Ingresa la operación (+, -, *, /):");
+    let numero1 = parseFloat(prompt("Ingresa el primer número:"));
+    let numero2 = parseFloat(prompt("Ingresa el segundo número:"));
+
+    switch (operacion) {
+        case "+":
+            console.log(`Resultado: ${numero1 + numero2}`);
+            break;
+        case "-":
+            console.log(`Resultado: ${numero1 - numero2}`);
+            break;
+        case "*":
+            console.log(`Resultado: ${numero1 * numero2}`);
+            break;
+        case "/":
+            if (numero2 === 0) {
+                console.log("Error: No se puede dividir entre cero.");
+            } else {
+                console.log(`Resultado: ${numero1 / numero2}`);
+            }
+            break;
+        default:
+            console.log("Operación no válida. Intenta nuevamente, ingresa +, -, * o /.");
+            break;
+    }
+}
+
+calculadora();

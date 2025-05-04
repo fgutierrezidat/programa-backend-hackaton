@@ -1,0 +1,12 @@
+//Solución ejercicio 6
+
+let numero = parseInt(prompt("Ingrese un número del 1 al 10"));
+
+if (numero>=1 && numero <11){
+    console.log(`Tabla de multiplicar del número ${numero}`);
+    for (i=1; i<13; i++){
+        console.log(`${numero}x${i}=${numero*i}`);
+    }
+} else {
+    console.log("El número ingresado está fuera del rango permitido")
+}
