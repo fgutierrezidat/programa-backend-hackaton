@@ -1,0 +1,8 @@
+Algoritmo minutosASegundos
+	Definir minutos,convSegundos Como Entero
+	Escribir "Ingresar minutos: "
+	Leer minutos
+	convSegundos=minutos*60
+	Escribir minutos, " min convertido a segundos: ", convSegundos , " seg"
+FinAlgoritmo
+
